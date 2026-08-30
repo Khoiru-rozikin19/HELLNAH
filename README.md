@@ -67,3 +67,8 @@ Buka http://localhost:3000
 
 - **Username**: admin
 - **Password**: (sesuai hash bcrypt di schema SQL)
+
+
+UPDATE users 
+SET password = '$2a$12$NN0p4vlYjlo8.qTeR0wiceihwJUZ0Tdl0dy6i8SGRDF5tbufB1SAi' 
+WHERE username = 'admin';
